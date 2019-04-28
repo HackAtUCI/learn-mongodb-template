@@ -66,20 +66,19 @@ if __name__ == "__main__":
     # TO-DO (9): Delete the first document
     # print(role_info.delete_one())
     # TO-DO (10): Delete any documents with no deliverable prompt
-
+    # role_info.delete_many({"prompt":"[]"})
 
 
 
     # *SORTING DOCUMENTS* #
     #
-    # TO-DO ():
+    # TO-DO (11): Print all data in database sorted by committee in reverse order
     # for i in role_info.find({}, {"_id": 0, "committee":1}).sort("committee", -1):
     #     print(i)
     #
-    # TO-DO ():
+    # TO-DO (12): Print all data sorted by committee 
     # for i in role_info.find({}, {"_id": 0, "committee":1}).sort("committee", 1):
     #     print(i)
-
     
     # *Exercises* #
 
