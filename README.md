@@ -2,6 +2,7 @@
 In this workshop, you will learn about MongoDB and write a small script using PyMongo that will allow us to transfer data from the jobs.csv file to a MongoDB database.
 
 ### Requirements
+- Download Python 3
 - mlab account
 - set up of a database under mlab account
 
@@ -18,7 +19,7 @@ Consider a case where you have a chaotic data set, one where some data have attr
 
 Now the flexible nature of NoSQL databases may make NoSQL databases look like they outclass SQL ones, but what NoSQL databases offer in flexibility they return in uncertainty. There is no structure you can assume when using a NoSQL database if you take advantage of the flexibility.  
 
-An additional thing to consider is how SQL and NoSQL databases generally scale. Without getting too detailed, SQL scale vertically(adding more capability to an existing machine) while NoSQL scale horizontally(adding more machines).  
+An additional thing to consider is how SQL and NoSQL databases generally scale. Without getting too detailed, SQL scales vertically(adding more capability to an existing machine) while NoSQL scales horizontally(adding more machines).  
 
 Regardless of the type of database you work with, they will always have four fundamental operations: creating an entry, reading an entry, updating an entry, and deleting an entry (CRUD).
 
@@ -44,7 +45,8 @@ The CRUD operations are called by:
 - Delete: delete_many() and delete_one()
 
 For create, you just need to pass data as a dict, either an iterable of them or just one.
-For read, update, and delete, you can pass 
+For read, update, and delete, you can pass nothing to specify any document, or filter documents with a dict containing specific fields and values as well as operators and modifiers like $eq and $set. More information on this can be found at
+https://docs.mongodb.com/manual/reference/operator/query/. Examples using query selectors and modifiers can be found in the db.py script.
 
 ### Further Reading:
 - SQL vs NoSQL: https://medium.com/xplenty-blog/the-sql-vs-nosql-difference-mysql-vs-mongodb-32c9980e67b2
