@@ -4,7 +4,7 @@ from mlab_credentials import credentials
 
 if __name__ == "__main__":
 
-    uri = "mongodb://{dbuser}:{dbpassword}@ds039007.mlab.com:39007/hack-roles".format(dbuser = credentials["username"], dbpassword = credentials["password"])
+    uri = "mongodb+srv://{dbuser}:{dbpassword}@hackworkshop-f4a9a.mongodb.net/test?retryWrites=true".format(dbuser = credentials["dbuser"], dbpassword = credentials["dbpassword"])
     client = pymongo.MongoClient(uri)
     db = client["hack-roles"]
     role_info = db["role-info"]     # Collection functions: https://api.mongodb.com/python/current/api/pymongo/collection.html
@@ -19,8 +19,6 @@ if __name__ == "__main__":
     # for row in reader:                  # could use insert_many() if you had a multiple dicts in a list
     #     role_info.insert_one(row)
     # csv_file.close()
-
-
 
     # *READING DOCUMENTS* #
     #
