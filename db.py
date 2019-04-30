@@ -12,6 +12,7 @@ if __name__ == "__main__":
 
 
     # *CREATING DOCUMENTS* #
+    #
     # TO-DO (1): Insert data into database using csv.DictWriter (comment out code after inserted to avoid multiple insertions)
     #
     # csv_file = open("roles.csv") 
@@ -19,6 +20,8 @@ if __name__ == "__main__":
     # for row in reader:                  # could use insert_many() if you had a multiple dicts in a list
     #     role_info.insert_one(row)
     # csv_file.close()
+
+
 
     # *READING DOCUMENTS* #
     #
@@ -44,6 +47,7 @@ if __name__ == "__main__":
 
 
     # *UPDATING DOCUMENTS* #
+    #
     # TO-DO (6): Insert {"foo":"bar"} into first document with committee marketing and print it out to see update
     # role_info.update_one({"committee":"marketing"}, {"$set": {"foo": "bar"}})
     # print(role_info.find_one({"committee":"marketing"}))
@@ -61,6 +65,7 @@ if __name__ == "__main__":
 
 
     # *DELETING DOCUMENTS* #
+    #
     # TO-DO (9): Delete the first document
     # print(role_info.delete_one())
     # TO-DO (10): Delete any documents with no deliverable prompt
