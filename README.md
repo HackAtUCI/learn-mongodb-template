@@ -47,6 +47,9 @@ For create, you just need to pass data as a dict, either an iterable of them or 
 For read, update, and delete, you can pass nothing to specify any document, or filter documents with a dict containing specific fields and values as well as operators and modifiers like $eq and $set. More information on this can be found at
 https://docs.mongodb.com/manual/reference/operator/query/. Examples using query selectors and modifiers can be found in the db.py script.
 
+### Workshop Slides:
+https://docs.google.com/presentation/d/1Fy8Un107vYQagfGWr5wcCy6U_yN55c7uECZ2VAfaL0Q/edit?fbclid=IwAR1R7fgIBRrkCrTeKHM90MDfKNWSUw7sScOSaCV0aQW8jhCdseEU_W6Cfvk
+
 ### Further Reading:
 - SQL vs NoSQL: https://medium.com/xplenty-blog/the-sql-vs-nosql-difference-mysql-vs-mongodb-32c9980e67b2
 - Scalability: https://softwareengineering.stackexchange.com/questions/194340/why-are-nosql-databases-more-scalable-than-sql
