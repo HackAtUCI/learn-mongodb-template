@@ -3,8 +3,7 @@ In this workshop, you will learn about MongoDB and write a small script using Py
 
 ### Requirements
 - Download Python 3
-- mlab account
-- set up of a database under mlab account
+- MongoDB Atlas account
 
 On repo:
 - Sample data from https://www.hackuci.com/recruit
