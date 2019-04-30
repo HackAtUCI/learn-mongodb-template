@@ -11,33 +11,18 @@ if __name__ == "__main__":
 
 
 
-<<<<<<< HEAD
     # ## *CREATING DOCUMENTS* ##
     # #TODO (1): Insert data into database using csv.DictWriter (comment out code after inserted to avoid multiple insertions)
     
-=======
-    # *CREATING DOCUMENTS* #
-    #
-    # TO-DO (1): Insert data into database using csv.DictWriter (comment out code after inserted to avoid multiple insertions)
-    #
->>>>>>> 183fe8eee0face6f1fb8187419d1ce9472d605c0
     # csv_file = open("roles.csv") 
     # reader = csv.DictReader(csv_file)   # will use the fieldnames in the first row to create dict for each row 
     # for row in reader:                  # could use insert_many() if you had a multiple dicts in a list
     #     role_info.insert_one(row)
     # csv_file.close()
 
-<<<<<<< HEAD
     # ## *READING DOCUMENTS* ##
     
     # #TODO (2): Read all data from database 
-=======
-
-
-    # *READING DOCUMENTS* #
-    #
-    # TO-DO (2): Read all data from database 
->>>>>>> 183fe8eee0face6f1fb8187419d1ce9472d605c0
     # for i in role_info.find():
     #     print(i)
     
@@ -58,14 +43,8 @@ if __name__ == "__main__":
 
 
 
-<<<<<<< HEAD
     # ## *UPDATING DOCUMENTS* ##
     # #TODO (6): Insert {"foo":"bar"} into first document with committee marketing and print it out to see update
-=======
-    # *UPDATING DOCUMENTS* #
-    #
-    # TO-DO (6): Insert {"foo":"bar"} into first document with committee marketing and print it out to see update
->>>>>>> 183fe8eee0face6f1fb8187419d1ce9472d605c0
     # role_info.update_one({"committee":"marketing"}, {"$set": {"foo": "bar"}})
     # print(role_info.find_one({"committee":"marketing"}))
     
@@ -81,14 +60,8 @@ if __name__ == "__main__":
 
 
 
-<<<<<<< HEAD
     # ## *DELETING DOCUMENTS* ##
     # #TODO (9): Delete the first document
-=======
-    # *DELETING DOCUMENTS* #
-    #
-    # TO-DO (9): Delete the first document
->>>>>>> 183fe8eee0face6f1fb8187419d1ce9472d605c0
     # print(role_info.delete_one())
     # #TODO (10): Delete any documents with no deliverable prompt
     # role_info.delete_many({"prompt":"[]"})
