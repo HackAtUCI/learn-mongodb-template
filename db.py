@@ -78,8 +78,23 @@ if __name__ == "__main__":
     # for i in role_info.find({}, {"_id": 0, "committee":1}).sort("committee", 1):
     #     print(i)
     
+    role_info.delete_many() # deletes all documents 
+    
+    #TODO(13): Write all information into the collection using bulkWrite.
+
+    ## Let's add some qualifications-
+    #TODO(14): Filter the results that have no qualifications (we have already done this above). Get their id, committee and role.
     # ## *Exercises* ##
 
+    #TODO(15): Using the ids generated above, update the qualifications of any one of these roles with a few relevant qualifications.
+
+    #TODO(16): Filter roles that have the committee corporate. Sort the results by role listing them alphabetically. Display the committee and role.
+
+    #TODO(17): Update a technology role that has role name 'Front-end Developer' to have the role name 'Mobile Developer'
+
+    #TODO(18): Create a new corporate position called 'General Corporate Organizer'. Set the prompt and qualifications as empty lists.
+
+    #TODO(19): Delete the General Marketing Organizer position.
     role_info.delete_many() # deletes all documents 
     client.close()
 
