@@ -82,9 +82,11 @@ if __name__ == "__main__":
     
     #TODO(13): Write all information into the collection using bulkWrite.
 
+    # ## *Exercises* ##
+
     ## Let's add some qualifications-
     #TODO(14): Filter the results that have no qualifications (we have already done this above). Get their id, committee and role.
-    # ## *Exercises* ##
+    
 
     #TODO(15): Using the ids generated above, update the qualifications of any one of these roles with a few relevant qualifications.
 
